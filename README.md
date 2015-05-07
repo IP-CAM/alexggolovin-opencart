@@ -1,4 +1,4 @@
-# opencart
+# alexggolovin-opencart release 1.1.2
 
 #### Table of Contents
 
@@ -17,13 +17,12 @@
 
 ## Overview
  This module created for deploy amazing OpenCart opensource ecommerce CMS on the new installed Linux server.
- All required additional componenets: web server, database server, php, will be installed and configured by this module automatically to get CMS working in seconds! (40.48 seconds on RHEL server with 1CPU and 1Gb of RAM). 
-Operating systems supported: RedHat/CentOS/Debian/Ubuntu.
+ All required additional componenets: RedHat/CentOS RPM EPEL repository,  web server, database server, php, will be installed and configured by this module automatically to get CMS working in seconds! (40.48 seconds on RHEL server with 1CPU and 1Gb of RAM). Operating systems supported: RedHat/CentOS/Debian/Ubuntu.
 
 
 ## Module Structure Description
- Be aware, this module installs required dependencies to the puppet master server: alexggolovin-lamp, puppetlabs-apache with puppetlabs-stdlib and puppetlabs-concat, puppetlabs-mysql with nanliu-staging. This modules were chosen as the core modules for lamp stack deploy because of their complex functionality and multiple configurations capacities. 
- I trust to all modules created by "puppetlabs" team. And believe it's better to use the best module created by someone else which is already exists instead of spend a lot of time on creating the worse one. 
+ Be aware, this module installs required dependencies to the puppet master server: alexggolovin-lamp, puppetlabs-apache with puppetlabs-stdlib and puppetlabs-concat, puppetlabs-mysql with nanliu-staging, EPEL repo for RedHat based distros which required for php-mcrypt package and installed with help of epel-release rpm native package. This modules were chosen as the core modules for lamp stack deploy because of their complex functionality and multiple configurations capacities. 
+ I trust to all modules created by "puppetlabs" team. And believe it's better to use the best modules created by professionals which is already exists and well tested, instead of spend a lot of time on creating the worse one. 
 
 
 ## OpenCart Setup
@@ -57,10 +56,11 @@ BY DEFAULT: opencart.local virtualhost on port "80" and site foloder with mysql 
 
 2. To get OpenCart installed on your "mywebserver.dev.local" node, the opencart class needs to be added in site.pp configuration file:
 
+```puppet
     node 'mywebserver.dev.local' {
        include opencart
     }
-
+```
 
 ## Classes Advanced Usage
 
@@ -72,6 +72,7 @@ The next module classes responsible for:
 
 3. Class opencart::servers - deploys LAMP stack, "::apache::vhost" section is responsible for all configurations of the new created sites include virtualhost parameters where just port, site foloder and name has been added by default, "mysql_database" controls opencart's database creation process. There are more options could be added when required, for example:
 
+```puppet
     apache::vhost { 'opencartssl.local':
       port            => 443,
       ssl             => true,
@@ -87,6 +88,7 @@ The next module classes responsible for:
       host     => 'localhost',
       grant    => ['SELECT', 'UPDATE'],
      }
+```
 
  More examples could be found in the parent puppetlabs-apache and mysql modules "/etc/puppet/modules/apache/README.md","/etc/puppet/modules/mysql/README.md" descriptions, which were used as a dependency parts of the "alexggolovin-opencart" module for apache and mysql servers deploy. This both modules configurations also could be changed directly in their own folders, to get opencart deployed with optional required configurations.
 
@@ -116,5 +118,5 @@ This module could be used by others puppet users as helpful "fast deploy" base f
 
 
 ## Release Notes
-Release 1.1.0.
+Release 1.1.2.
 OpenCart deploy for RedHat/CentOS/Debian/Ubuntu operating systems.

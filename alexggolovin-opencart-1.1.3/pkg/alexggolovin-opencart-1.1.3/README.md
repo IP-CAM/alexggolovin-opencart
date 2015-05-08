@@ -1,4 +1,4 @@
-# alexggolovin-opencart release 1.1.2
+# alexggolovin-opencart release 1.1.3
 
 #### Table of Contents
 
@@ -119,5 +119,5 @@ This module could be used by others puppet users as helpful "fast deploy" base f
 
 
 ## Release Notes
-Release 1.1.2.
+Release 1.1.3.
 OpenCart deploy for AWS RedHat/RedHat/CentOS/Debian/Ubuntu operating systems.

@@ -1,8 +1,0 @@
-2015-05-08 - 1.1.2
-* RedHat/CentOS EPEL repository added as dependency required for php-mcrypt package. 
-Thanks ToonMeynen who tested this module and opened new issues on github, full information is available by this link: 
-https://github.com/alexggolovin/alexggolovin-opencart/issues
-* README.md file changed with description about required EPEL installation 
-
-2015-04-14 - 1.1.0
-* OpenCart CMS deployed and tested on RedHat/CentOS/Debian/Ubuntu operating systems

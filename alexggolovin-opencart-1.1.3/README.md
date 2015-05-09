@@ -45,14 +45,14 @@ Debian,Ubuntu,RHEL or CentOS Linux operating system with puppet agent installed 
 ### Beginning with opencart
 1. All required params.pp parameters must be preconfigured before this module usage beginning. 
 
-BY DEFAULT: opencart.local virtualhost on port "80" and site foloder with mysql "opencart" database (next usage with root user from localhost and empty password) will be created.
-  -The $sitename - apache virtual host folder and new site address name
-  -The $content - "http" download link to the opencart ".zip" installation file  
-  -The $zip_destination - local folder and filename for downloaded ".zip" opencart installation file 
-  -The $unzip_destination - temporary folder for opencart installation file extraction
-  -The $mydb - name of the new created opencart's mysql database 
-  -The $myuser - mysql database user owner of new created db (root on localhost by default)
-  -The $mypass - password of the new db user owner (not requried for root on localhost by default)   
+ * **BY DEFAULT**: opencart.local virtualhost on port "80" and site foloder with mysql "opencart" database (next usage with root user from localhost and empty password) will be created.
+  *The $sitename - apache virtual host folder and new site address name
+  *The $content - "http" download link to the opencart ".zip" installation file  
+  *The $zip_destination - local folder and filename for downloaded ".zip" opencart installation file 
+  *The $unzip_destination - temporary folder for opencart installation file extraction
+  *The $mydb - name of the new created opencart's mysql database 
+  *The $myuser - mysql database user owner of new created db (root on localhost by default)
+  *The $mypass - password of the new db user owner (not requried for root on localhost by default)   
 
 2. To get OpenCart installed on your "mywebserver.dev.local" node, the opencart class needs to be added in site.pp configuration file:
 

@@ -1,0 +1,17 @@
+2015-05-10 - 1.1.4 
+*  -The $sitepath - site content location on the disk path added
+*  -The $siteowner - site username owner name who will have access to the site added
+*  -The $sitegroup - site group name which should has acces to the site added
+
+2015-05-09 - 1.1.3
+* EPEL repo installation changed with help of stahnma-epel module
+* Now all EPEL installation opencart components supported and tested on CentOS/AWS RedHat/RHEL distributions
+
+2015-05-08 - 1.1.2
+* RedHat/CentOS EPEL repository added as dependency required for php-mcrypt package. 
+Thanks ToonMeynen who tested this module and opened new issues on github, full information is available by this link: 
+https://github.com/alexggolovin/alexggolovin-opencart/issues
+* README.md file changed with description about required EPEL installation 
+
+2015-04-14 - 1.1.0
+* OpenCart CMS deployed and tested on RedHat/CentOS/Debian/Ubuntu operating systems

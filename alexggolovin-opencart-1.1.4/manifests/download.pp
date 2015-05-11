@@ -12,7 +12,7 @@ inherits ::opencart::params {
    }
 
    exec {"wget-${content}":
-       command => "wget ${content} -O ${zip_destination}",
+       command => "wget ${content} --no-check-certificate -O ${zip_destination}",
        path    => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ], 
        require => Package['wget'],
        onlyif => [ "test ! -f ${zip_destination} && test ! -f ${sitepath}/php.ini"],

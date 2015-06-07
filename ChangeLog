@@ -1,3 +1,6 @@
+2015-06-07 - 1.1.5
+* Issue with download cms install from github been solved by ToonMeynen with new added --no-check-certificate option to wget
+
 2015-05-10 - 1.1.4 
 *  -The $sitepath - site content location on the disk path added
 *  -The $siteowner - site username owner name who will have access to the site added

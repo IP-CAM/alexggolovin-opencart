@@ -1,0 +1,17 @@
+{
+  "ChangeLog": "81720d00f034cb3001861a0472c60ca9",
+  "README.md": "eee2b39e1406e770106b8c5248203439",
+  "Rakefile": "20b80e526e351a74df2001f504e756d2",
+  "files/info.php": "9dccf462d245f55ac3e0cdb0e5401f5b",
+  "manifests/depend.pp": "ab73116863ed1ccc32696e6afedbb478",
+  "manifests/deploy.pp": "f9de8931d2bcdef3b9f80ad322ab2342",
+  "manifests/download.pp": "7ccd956c63f3ab019c4b701d9e8881bc",
+  "manifests/extract.pp": "8db25376a70d6921f4e0e35f714117c2",
+  "manifests/init.pp": "edff568af2c1817b4a1f79c1dbd4a03e",
+  "manifests/params.pp": "d5f1f6f188b0130941d5542cd0f8da0d",
+  "manifests/servers.pp": "51948a39977f465da514e86c36087770",
+  "metadata.json": "89c062e97c77e5d53f8f9c9a0d3bb5a6",
+  "spec/classes/init_spec.rb": "f7618009838f65033bf8f234d972891c",
+  "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+  "tests/init.pp": "dd66ee300ff7bebe8c5b53f2d0067ee1"
+}

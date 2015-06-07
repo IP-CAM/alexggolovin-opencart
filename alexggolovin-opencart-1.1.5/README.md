@@ -13,7 +13,7 @@
 5. [Limitations](#limitations)
 6. [Development](#development)
 7. [Release Notes](#releasenotes)
-
+8. [Module contributors](#module_contributors)
 
 ## Overview
  This module created for deploy amazing OpenCart opensource ecommerce CMS on the new installed Linux server.
@@ -124,3 +124,6 @@ This module could be used by others puppet users as helpful "fast deploy" base f
 ## Release Notes
 See ChangeLog for more release changes details
 OpenCart deploy for AWS RedHat/RedHat/CentOS/Debian/Ubuntu operating systems.
+
+##Module contributors: 
+ToonMeynen "https://github.com/ToonMeynen"

@@ -1,0 +1,59 @@
+{
+  "name": "alexggolovin-opencart",
+  "version": "1.1.5",
+  "author": "Alexander Golovin",
+  "summary": "OpenCart CMS deploy and configuration module",
+  "license": "Apache 2.0",
+  "source": "https://github.com/alexggolovin/alexggolovin-opencart",
+  "project_page": "https://github.com/alexggolovin/alexggolovin-opencart",
+  "issues_url": "https://github.com/alexggolovin/alexggolovin-opencart/issues",
+  "tags": [
+    "OpenCart",
+    "cms",
+    "ecommerce",
+    "alexggolovin"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04",
+        "14.04"
+      ]
+    }
+  ],
+  "description": "OpenCart CMS configuration and deploy module for RedHat/CentOS/Debian/Ubuntu Linux distributions",
+  "dependencies": [
+    {
+      "name": "alexggolovin/lamp",
+      "version_requirement": "1.x"
+    },
+    {
+      "name": "stahnma/epel"
+    }
+  ]
+}

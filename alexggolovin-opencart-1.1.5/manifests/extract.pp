@@ -5,7 +5,7 @@
 
 class opencart::extract 
 
-inherits ::opencart::params {
+inherits ::opencart {
 
    package {'unzip':
        ensure  => present,

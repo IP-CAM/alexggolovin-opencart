@@ -9,7 +9,7 @@
 
 class opencart::depend 
 
-inherits ::opencart::params {
+inherits ::opencart {
 
 package {$php_gd: ensure => installed,}
 package {$php_mysql: ensure => installed,}

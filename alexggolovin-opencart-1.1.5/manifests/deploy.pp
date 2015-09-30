@@ -6,7 +6,7 @@
 
 class opencart::deploy
 
-inherits ::opencart::params {
+inherits ::opencart {
 
    exec {"cp-${sitename}":
        command => ["cp -r ${unzip_destination}/opencart*/upload/* ${sitepath}/ && mv ${sitepath}/config-dist.php ${sitepath}/config.php && mv ${sitepath}/admin/config-dist.php ${sitepath}/admin/config.php && chmod -Rvv 777 ${sitepath}/system/cache/ && chmod -Rvv 777 ${sitepath}/system/logs/ && chmod -Rvv 777 ${sitepath}/system/download && chmod -Rvv 777 ${sitepath}/system/upload && chmod -Rvv 777 ${sitepath}/image/ && chmod -Rvv 777 ${sitepath}/image/cache/ && chmod -Rvv 777 ${sitepath}/image/catalog/ && chmod -Rvv 777 ${sitepath}/config.php && chmod -Rvv 777 ${sitepath}/admin/config.php && echo `date +%F\ %T` > ${sitepath}/admin/opencart_deployed.txt"],

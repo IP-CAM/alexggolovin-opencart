@@ -10,7 +10,7 @@
 
 class opencart::servers
 
-inherits ::opencart::params {
+inherits ::opencart {
 
 ::apache::vhost { "$sitename":
       port    => '80',

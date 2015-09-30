@@ -5,7 +5,7 @@
 
 class opencart::download 
 
-inherits ::opencart::params {
+inherits ::opencart {
 
    package {'wget':
        ensure => present,
